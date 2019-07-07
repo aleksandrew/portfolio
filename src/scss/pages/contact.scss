@@ -1,0 +1,97 @@
+@import "../vars";
+
+.contact {
+	margin-bottom: 110px;
+}
+
+.contact-block {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media screen and (min-width: 776px) {
+		max-width: 585px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.contact-form--input {
+	border: 1px solid $frenchgray;
+	font-family: Raleway, sans-serif;
+	padding: 0 15px;
+	line-height: 2.5;
+	border-radius: 3px;
+	color: $gray;
+	margin-bottom: 15px;
+}
+
+.contact-form--input, .contact-form__btn {
+	width: 100%;
+	
+	&:focus {
+		outline: none;
+		border: 1px solid $slategray;
+	}
+}
+
+.contact-form__textarea {
+	resize: vertical;
+}
+
+.contact-form__btn {
+	border: none;
+	color: $white;
+	letter-spacing: .5px;
+	background-color: rgba( $black, .8);
+	cursor: pointer;
+	transition: all .5s ease;
+	
+	&:hover {
+		background-color: $black;
+	}
+}
+
+// .contact animation
+
+.anim-contact {
+	&--bottom {
+		animation-name: animBottom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+	}
+
+	&--text {
+		animation-name: animBottom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: .2s;
+	}
+
+	&--email {
+		animation-name: animBottom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: .4s;
+	}
+	
+	&--textarea {
+		animation-name: animBottom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: .6s;
+	}
+
+	&--btn {
+		animation-name: animBottom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: .8s;
+	}
+}

@@ -1,0 +1,183 @@
+@import "../vars"; 
+  
+.header {
+  background-color: $white; 
+  border-bottom: 1px $lightgray solid; 
+  padding-top: 5px;
+	padding-bottom: 5px;
+	z-index: 100;
+  
+  &-container {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  &__desc {
+    display: flex;
+    align-items: flex-start;
+		justify-content: space-between;
+		flex-flow: column;
+		transition: all .5s linear; 
+		
+		@media screen and (min-width: 992px) {
+			flex-flow: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+  }
+}
+
+.header-line {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	transition: all .5s linear;
+
+	&__logo {
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: .2rem;
+		font-family: Gloria Hallelujah, cursive; 
+		color: $black;
+	}
+}
+
+.mb-20 {
+	margin-bottom: 20px; 
+	transition: all .5s linear; 
+		
+	@media screen and (min-width: 992px) {
+		margin: 0;
+	}
+}
+
+.pb-100 {
+	height: 1280px;
+	transition: all .5s linear;
+}
+
+.menu-list {
+  display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	transition: all .5s linear; 
+	
+	@media screen and (min-width: 992px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	&__link {
+		margin: 10px 0;
+		
+		@media screen and (min-width: 992px) {
+			margin: 0;
+		}
+	}
+}
+
+.on {
+	display: flex;
+	transition: all .5s linear;
+}
+
+.menu-link {
+  color: $black;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+	transition: all .3s ease;
+	padding: 10px 0;
+  
+  &:hover {
+    color: $lightpink;
+  }
+  
+  &--desc {
+    font-size: 1.3rem; 
+		margin-left: 0px;
+	
+		@media screen and (min-width: 992px) {
+			font-size: 1.1rem; 
+			margin-left: 30px;
+		}
+  }
+}
+
+.active {
+  color: $lightpink;
+}
+
+.sticky {	
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+}
+
+// mobile icon
+
+
+.header-line__micon { 
+  display: block;
+  margin-top: 10px; 
+  width: 4rem; 
+  height: 3rem;
+  position: relative;
+  top: 0;
+	right: 15px; 
+	cursor: pointer;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+.header-line__micon span, .header-line__micon span::before, .header-line__micon span::after {
+  background: $black;
+  width: 100%;
+  height: 100%; 
+  height: 2px;
+  border-radius: 2px;
+  backface-visibility: hidden;  
+  transition: all .3s;
+  position: relative;
+  display: block;  
+  transition: all .5s ease;
+}
+ 
+.header-line__micon span {
+  position: relative; 
+  display: block; 
+  margin: auto; 
+}
+
+.header-line__micon span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+} 
+
+.header-line__micon span::after {
+  content: "";
+  position: absolute;
+  left: 0; 
+  top: 18px;
+}
+
+.open span {
+  background-color: transparent; 
+} 
+
+.open span::before {
+  transform: rotate(45deg) translate(-1px, 0px);
+}
+ 
+.open span::after { 
+  transform: rotate(-45deg) translate(6px, -7px);
+}

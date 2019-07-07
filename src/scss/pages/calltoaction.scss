@@ -1,0 +1,65 @@
+@import "../vars";
+
+.calltoaction {
+	background: url(../img/background/cover-calltoaction.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-color: $darkgray; 
+	width: 100%;
+	height: auto;
+	padding: 60px 5px;
+	color: $white;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		padding: 50px 20px;			
+	}
+
+	&__title {
+		font-size: 2rem;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+	}
+	
+	&__desc {
+		font-size: 2rem;
+		margin-bottom: 60px;
+	} 
+
+	&__btn {
+		background: $pearlriver;
+		color: $black;
+		
+		&:hover {
+			background: $white;
+		}
+
+		@media screen and (min-width: 992px) {
+			padding: 15px 30px;			
+		}
+	}
+}
+
+// calltoaction animation
+
+.anim-call {
+	&--title {
+		animation-name: animRight;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0;
+	}
+	
+	&--desc {
+		animation-name: animRight;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: .2s;
+	}
+	
+	&--btn {
+		animation-name: animScale;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: .4s;
+	}
+}

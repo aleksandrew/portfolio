@@ -1,0 +1,155 @@
+@import "../vars";
+
+.reviews{
+  background-color: $lightgray;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.desc--reviews {
+	margin-bottom: 100px;
+}
+
+.reviews-progressblock {
+	width: 100%;
+
+	&__line { 
+		height: 1px;
+		background-color: $red;
+		width: 1%;
+
+		@keyframes progressline {  
+			0% {
+				width: 0;
+			} 
+			100% {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.quote-block {
+	position: relative;
+	height: 280px; 
+	margin-bottom: 50px;
+
+	@media screen and (min-width: 480px) {
+		height: 330px;
+	}
+
+	@media screen and (min-width: 768px) {
+		height: 160px;
+	}
+}
+
+.reviews-quote {
+	position: absolute;
+	margin: 30px 0; 
+	flex-direction: column;
+		
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+	}
+
+	&__left {
+		flex-grow: 0;
+		order: 1;
+		width: 100%;
+		
+		@media screen and (min-width: 768px) {
+			order: 0;
+			width: 70%;
+		}
+		
+		@media screen and (min-width: 992px) {
+			width: 80%;
+		}
+	}
+
+	&__right {
+		flex-grow: 0;
+		order: 0; 
+		width: 100%; 
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center; 
+		
+		@media screen and (min-width: 768px) {
+			order: 1; 
+			width: 30%;
+			margin-bottom: 0;
+		}
+		
+		@media screen and (min-width: 992px) {
+			width: 20%;
+		}
+	}
+} 
+
+.reviews-quote__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: $slategray;
+}
+
+.quote-text {
+	font-size: 2.5rem;
+	margin: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.quote-autor {
+	font-size: 1.4rem;
+	margin-left: 25px;
+	
+	&::before {
+		content: "";
+		display: block;
+    width: 15px;
+    height: 1px;
+    background-color: $slategray;
+    position: relative;
+    top: 8px;
+    left: -25px; 
+
+		@media screen and (min-width: 480px) {
+			top: 10px;
+		}
+		
+		@media screen and (min-width: 768px) {
+			top: 50%;
+		}
+	}
+}
+
+.quote-img {
+	width: 50%; 
+	
+	animation-name: slideImg;
+  animation-duration: 1s;
+		
+	@media screen and (min-width: 768px) {
+		width: 100%;
+	}
+
+	@keyframes slideImg {
+		from {
+			opacity: 0.3; 
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+// reviews animation
+
+.anim-reviews--bottom {
+	animation-name: animBottom;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
