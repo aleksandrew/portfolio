@@ -181,3 +181,42 @@
 .open span::after { 
   transform: rotate(-45deg) translate(6px, -7px);
 }
+
+// home button
+
+.home-btn { 
+	display: none; 
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	height: 40px;
+  width: 40px;
+	border-radius: 5px;
+	background-color: rgba(#878787, .5);
+	
+	&:hover {
+		background-color: #878787;
+		
+		.home-btn__arrow {
+			border-color: $lightred;
+		}
+	}
+	
+	
+	
+	&__arrow {
+		border-right: 2px solid; 
+    border-bottom: 2px solid;
+    height: 10px;
+    width: 10px;
+    transform: rotate(225deg);
+    border-color: $white;
+    position: relative;
+    top: 18px;
+    left: 16px;
+	}
+}
+
+.home-btn--sticky {
+		display: block; 
+	}

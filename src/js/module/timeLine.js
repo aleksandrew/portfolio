@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-timeLine(() => {	
+function timeLine() {	
 	let line = $(".reviews-progressblock__line");
 	let index = 0;
 
@@ -17,6 +17,6 @@ timeLine(() => {
 	line.animate({
 		width: '100%'
 	}, 8000, timeLine)
-})
+}
 
 export {timeLine};
