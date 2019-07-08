@@ -16,8 +16,8 @@ export default $(() => {
 		const descAttainment = $("#descAttainment").offset();
 		const descAttainmentTop = descAttainment.top;
 
-		const serviseInfo = $(".skill-block").offset();
-		const serviseInfoTop = serviseInfo.top;
+		const skin = $(".skin").offset();
+		const skinTop = skin.top;
 
 		if (!$("#descAttainment").hasClass("desc-attainment-complete")) {
 			if (windowScrollPosBottom > descAttainmentTop) {
@@ -26,7 +26,7 @@ export default $(() => {
 		}
 
 		if (!$(".skin").hasClass("scin-complete")) {
-			if (windowScrollPosBottom > serviseInfoTop) {
+			if (windowScrollPosBottom > skinTop) {
 				$(".skin").addClass("scin-complete");
 
 				circleOffset(circleElse, 80);
