@@ -30,6 +30,7 @@
 	border-radius: 3px;
 	color: $gray;
 	margin-bottom: 15px;
+	-webkit-appearance: none;
 }
 
 .contact-form--input, .contact-form__btn {
@@ -52,6 +53,7 @@
 	background-color: rgba( $black, .8);
 	cursor: pointer;
 	transition: all .5s ease;
+	-webkit-appearance: none; 
 	
 	&:hover {
 		background-color: $black;

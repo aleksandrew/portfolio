@@ -12,6 +12,10 @@ export default $(() => {
 		const portfolioWorks = $(".portfolio-works").offset();
 		const portfolioWorksTop = portfolioWorks.top;
 
+		$(".skill-link--invalid").parent().click(function(){
+			return false;
+		});
+
 		if (!$("#descPortfolio").hasClass("desc-portfolio-complete")) {
 			if (windowScrollPosBottom > descPortfolioTop) {
 				$("#descPortfolio").addClass("desc-portfolio-complete anim-portfolio--bottom");

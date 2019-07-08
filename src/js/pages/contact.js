@@ -8,6 +8,14 @@ export default $(() => {
 		
 		const descContact = $("#descContact").offset();
 		const descContactTop = descContact.top;
+
+		const name = $(".contact-form__text");
+		const nameVal = name.val();
+		const email = $(".contact-form__email");
+		const emailVal = email.val();
+		const text = $(".contact-form__text");
+		const textVal = text.val();
+		const submitBtn = $("form");
 		
 		if (!$("#descContact").hasClass("desc-contact-complete")) {
 			if (windowScrollPosBottom > descContactTop) {

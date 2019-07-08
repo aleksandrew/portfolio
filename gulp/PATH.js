@@ -30,7 +30,13 @@ const PATH = {
     input: [`${src}/js/pages/*.js`],
     output: [`${build}/js`],
     watch: [`${src}/js/**/*.js`, `!${src}/js/libs.js`]
-  }
+	},
+	doc: {
+    input: [`${src}/assets/doc/**/*`],
+    output: [`${build}/doc`],
+    watch: [`${src}/assets/doc/**/*`],
+    folder: [`${src}/assets/doc`]
+	}
 };
 
 export default PATH;

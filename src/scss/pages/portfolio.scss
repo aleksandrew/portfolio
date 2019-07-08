@@ -55,6 +55,10 @@
 		margin: 0; 
 		background: $orange; 
 	}
+
+	&--invalid {
+		cursor: not-allowed;
+	}
 }
  
 .fig-img {

@@ -1,6 +1,6 @@
 @import "../vars";
 
-.service {
+.about {
   background-color: $lightgray;
   width: 100%;
 	height: auto;
@@ -11,13 +11,13 @@
 	}
 }
 
-.desc--service{
+.desc--about{
 	.desc__title::after {
 		top: 34px;
 	}
 }
 
-.service-info {
+.about-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@
   }
 }
 
-.skill-block {
+.about-block {
   min-height: 100%;
   width: 100%;
   margin-bottom: 20px;
@@ -67,7 +67,7 @@
     font-size: 1.3rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 300; 
+    font-weight: 700; 
     color: $black;
     margin-bottom: 20px;
   }
@@ -77,7 +77,7 @@
 	}
 }
 
-// service animation
+// about animation
 
 .anim-serv {
 	&--bottom {

@@ -9,8 +9,8 @@ export default $(() => {
 		const footer = $("#footer").offset();
 		const footerTop = footer.top;
 
-		const serviseInfo = $(".skill-block").offset();
-		const serviseInfoTop = serviseInfo.top;
+		// const serviseInfo = $(".skill-block").offset();
+		// const serviseInfoTop = serviseInfo.top;
 
 		if (!$("#footer").hasClass("desc-footer-complete")) {
 			if (windowScrollPosBottom > footerTop) {
