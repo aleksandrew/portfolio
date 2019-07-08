@@ -1,10 +1,12 @@
 import $ from 'jquery';
+import {scrollAnimate} from '../module/scrollAnimate';
 
 export default $(() => {
-	window.onscroll = () => {stickyHeader()}; 
-
 	const header = document.getElementById("header");
-	const sticky = header.offsetTop; 
+	const scrollUp = $("#toHome");
+	const sticky = header.offsetTop;
+
+	window.onscroll = () => {stickyHeader()}; 
 
 	$('.header-line__micon').on('click', () => {
 		$('.header-line__micon').toggleClass('open');
@@ -22,11 +24,15 @@ export default $(() => {
 		} 
 	})
 
-	stickyHeader(() => {
+	scrollAnimate(scrollUp);
+
+	function stickyHeader() {
 		if(window.pageYOffset > sticky) {
 			header.classList.add("sticky");
+			scrollUp.addClass("home-btn--sticky");
 		} else {
 			header.classList.remove("sticky");
+			scrollUp.removeClass("home-btn--sticky");
 		}
-	})
+	}
 })

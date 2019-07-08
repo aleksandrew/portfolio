@@ -1,10 +1,7 @@
 import $ from 'jquery';
 
-scrollAnimate((menuItems) => {
-	const topMenu = $("#header");
-	const topMenuHeight = topMenu.outerHeight();
-
-	menuItems.on('click', ((e) => {
+function scrollAnimate(menuItems) {
+	menuItems.on('click', function (e) {
 		let href = $(this).attr("href");
 		let offsetTop = href === "#" ? 0 : $(href).offset().top;
 		
@@ -13,7 +10,7 @@ scrollAnimate((menuItems) => {
 		}, 850);
 		
 		e.preventDefault();
-	}));
-})
+	});
+}
 
 export {scrollAnimate};

@@ -7,7 +7,7 @@ export default $(() => {
 	timeLine();
 	showSlide();
 
-	$(window).scroll(() => {
+	$(window).scroll(function() {
 		const windowHeight = $(window).height();
 		const windowScrollPosTop = $(window).scrollTop();
 		const windowScrollPosBottom = windowHeight + windowScrollPosTop;

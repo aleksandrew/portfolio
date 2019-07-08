@@ -1,13 +1,13 @@
 import $ from 'jquery';
 
-circleOffset((counter, precent) => {
+function circleOffset(counter, precent) {
 	let no = 0;
 	let pointToFill = 4.72;
 	let cw = counter.canvas.width;
 	let ch = counter. canvas.height;
 	let diff;
 
-	fillCounter(() => {
+	function fillCounter() {
 		diff = ((no/100) * Math.PI*2*10);
 		counter.clearRect(0,0,cw,ch);
 		counter.lineWidth = 10;
@@ -25,9 +25,9 @@ circleOffset((counter, precent) => {
 		}
 
 		no++;
-	})
+	}
 
 	let fill = setInterval(fillCounter, 50);
-})
+}
 
 export {circleOffset};
