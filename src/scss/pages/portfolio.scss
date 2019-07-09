@@ -55,6 +55,10 @@
 		margin: 0; 
 		background: $orange; 
 	}
+
+	&--invalid {
+		cursor: not-allowed;
+	}
 }
  
 .fig-img {
@@ -111,6 +115,9 @@
 		font-size: 1.1rem;
 		line-height: 2;  
 		text-transform: uppercase;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 		letter-spacing: 1.2px;
 		margin: 0 35px; 
 		opacity: 0;

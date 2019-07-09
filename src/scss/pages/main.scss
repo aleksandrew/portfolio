@@ -7,6 +7,7 @@
   height: 100%;
   width: 100%;
   z-index: 1;
+	-webkit-appearance: none; 
 
   &::before {
     content: "";
@@ -68,6 +69,7 @@
 }
 
 .scroll-field {
+	padding-top: 20px;
   position: relative;
   left: 47%;
 }
