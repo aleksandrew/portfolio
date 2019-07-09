@@ -1,1 +1,1 @@
-# beta version of the portfolio
+# view live https://aleksandrew.github.io/portfolio
