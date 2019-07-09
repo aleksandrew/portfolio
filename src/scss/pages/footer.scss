@@ -77,6 +77,10 @@
 		&:hover {
 			color: rgba( $white, .5);
 		}
+		
+		&:visited {
+			color: rgba( $lightred, .8);
+		}
 	}
 }
 
