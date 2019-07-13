@@ -35,8 +35,8 @@ export default $(() => {
 				circleOffset(circleCss, 81);
 				circleOffset(circleSass, 80);
 				circleOffset(circleBootstrap, 72);
-				circleOffset(circleJs, 65);
-				circleOffset(circleJQuery, 63);
+				circleOffset(circleJs, 55);
+				circleOffset(circleJQuery, 53);
 				circleOffset(circleGit, 25);
 			} 
 		}
