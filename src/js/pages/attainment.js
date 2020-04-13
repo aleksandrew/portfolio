@@ -8,7 +8,9 @@ export default $(() => {
 	const circleBootstrap = document.getElementsByClassName('progress-ring')[3].getContext("2d");
 	const circleJs = document.getElementsByClassName('progress-ring')[4].getContext("2d");
 	const circleJQuery = document.getElementsByClassName('progress-ring')[5].getContext("2d");
-	const circleGit = document.getElementsByClassName('progress-ring')[6].getContext("2d");
+	const circleReact = document.getElementsByClassName('progress-ring')[6].getContext("2d");
+	const circleRedux = document.getElementsByClassName('progress-ring')[7].getContext("2d");
+	const circleGit = document.getElementsByClassName('progress-ring')[8].getContext("2d");
  
 	$(window).scroll(() => {
 		const windowHeight = $(window).height();
@@ -31,13 +33,15 @@ export default $(() => {
 			if (windowScrollPosBottom > skinTop) {
 				$(".skin").addClass("scin-complete");
 
-				circleOffset(circleHtml, 80);
-				circleOffset(circleCss, 81);
-				circleOffset(circleSass, 80);
-				circleOffset(circleBootstrap, 72);
-				circleOffset(circleJs, 55);
-				circleOffset(circleJQuery, 53);
-				circleOffset(circleGit, 25);
+				circleOffset(circleHtml, 85);
+				circleOffset(circleCss, 85);
+				circleOffset(circleSass, 85);
+				circleOffset(circleBootstrap, 80);
+				circleOffset(circleJs, 75);
+				circleOffset(circleJQuery, 55);
+				circleOffset(circleReact, 70);
+				circleOffset(circleRedux, 70);
+				circleOffset(circleGit, 40);
 			} 
 		}
 	})
